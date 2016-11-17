@@ -13,4 +13,181 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Add a Recipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblAddARecipe"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="144dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="180dp">
+
+           //this button will allow user to edit list of ingerdients (delete certain ones)
+            <Button
+
+                android:text="Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnEdit"
+                android:layout_weight="1" />
+            //allows user to add an ingredient to the list
+            <Button
+                android:text="+"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAdd"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Choose Ingredients:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblChooseIngr"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="169dp"
+            android:id="@+id/ingredientScrollList">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ingrCheckList">
+
+                <CheckBox
+                    android:text="Tomato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chkIngr1" />
+
+                <CheckBox
+                    android:text="Avocado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chkIngr2" />
+
+                <CheckBox
+                    android:text="Onion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chkIngr3" />
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:text="Enter Steps:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblEnterSteps"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stepScrollList">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/stepLayout" >
+                //THE STEPS WILL BE IN A LIST; THERE SHOULD ALWAYS BE A BLANK FEILD TO ENTER A NEW STEP;
+                //IF ALL THE MULTIPLE LINE TEXT FEILDS ARE FULL, CREATE A NEW BLANK ONE.
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/txtStep1"
+                    android:hint="Enter Step 1"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/txtStep2"
+                    android:textSize="14sp"
+                    android:hint="Enter Step 2" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/txtStep3"
+                    android:textSize="14sp"
+                    android:hint="Enter Step 3" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dropCategory"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dropType"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:text="Cancel"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCancel"
+                android:layout_weight="0.03" />
+
+            <Button
+                android:text="Add Recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAddRecipe"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Swipe Left to Go Back"
+                android:id="@+id/textView14" />
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>

@@ -42,8 +42,11 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_weight="0.57"></LinearLayout>
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:baselineAligned="true"
+
+            android:id="@+id/chefIcon"></LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -56,8 +59,9 @@
                 android:text="My Recipes"
                 android:textSize="20dp"
                 android:fontFamily="sans-serif-medium"
-                android:id="@+id/button"
-                android:background="#b89c2d"
+
+                android:id="@+id/btnMyrecipe"
+
                 android:capitalize="none"
                 android:clickable="false" />
 
@@ -74,7 +78,7 @@
                 android:text="Add a recipe"
                 android:textSize="20dp"
                 android:fontFamily="sans-serif-medium"
-                android:id="@+id/button2" />
+                android:id="@+id/btnAddrecipe" />
 
         </LinearLayout>
 
@@ -89,8 +93,7 @@
                 android:text="Find a recipe"
                 android:textSize="20dp"
                 android:fontFamily="sans-serif-medium"
-                android:id="@+id/button3"
-                android:background="#b89c2d" />
+                android:id="@+id/btnFindRecipe" />
         </LinearLayout>
 
     </LinearLayout>

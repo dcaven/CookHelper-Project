@@ -22,20 +22,20 @@
         android:layout_alignParentTop="true">
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <Button
-
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
+                android:layout_width="51dp"
                 android:layout_height="wrap_content"
-                android:text="back"
-
-                android:id="@+id/button8"
-                android:background="@android:drawable/btn_default" />
-
+                android:text="Button"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:gravity="center"
+                android:id="@+id/btnHelp"
+                android:background="#b89c2d" />
         </LinearLayout>
 
         <LinearLayout
@@ -98,7 +98,10 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
                 android:onClick="showDropDown"
-                android:src="@android:drawable/btn_dropdown" />
+                android:src="@android:drawable/btn_dropdown"
+                android:id="@+id/dropDownArrow1"
+                android:longClickable="true"
+                android:focusable="false" />
         </LinearLayout>
 
         <LinearLayout
@@ -130,7 +133,7 @@
                 android:layout_gravity="center_horizontal"
                 android:onClick="showDropDown"
                 android:src="@android:drawable/btn_dropdown"
-                android:id="@+id/imageView" />
+                android:id="@+id/dropDownArrow2" />
 
         </LinearLayout>
 
@@ -151,40 +154,36 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:text="Reset"
-                android:id="@+id/button4"
-                android:gravity="center"
-                android:background="#b89c2d" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <Button
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="See recipe"
-                android:id="@+id/button5" />
+                android:text="Cancel"
+                android:id="@+id/btnCancel" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="110dp"
                 android:layout_height="wrap_content"
-                android:text="?"
-                android:layout_alignParentRight="true"
-                android:layout_marginLeft="150dp"
-                android:layout_marginRight="0dp"
                 android:gravity="center"
-                android:id="@+id/button6"
+                android:text="See recipe"
+                android:id="@+id/btnSeeRecipe"
                 android:background="#b89c2d" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:id="@+id/btnReset"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
 
         </LinearLayout>
 
