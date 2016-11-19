@@ -17,19 +17,43 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <TextView
             android:text="Add a Recipe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/lblAddARecipe"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Name:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/txtAddRecipe"
+                android:hint="Enter Name"
+                android:textSize="18sp" />
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="144dp"
-            android:layout_height="32dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="180dp">
 
            //this button will allow user to edit list of ingerdients (delete certain ones)
@@ -51,44 +75,6 @@
         </LinearLayout>
 
         <TextView
-            android:text="Choose Ingredients:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/lblChooseIngr"
-            android:textSize="18sp" />
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="169dp"
-            android:id="@+id/ingredientScrollList">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/ingrCheckList">
-
-                <CheckBox
-                    android:text="Tomato"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/chkIngr1" />
-
-                <CheckBox
-                    android:text="Avocado"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/chkIngr2" />
-
-                <CheckBox
-                    android:text="Onion"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/chkIngr3" />
-            </LinearLayout>
-        </ScrollView>
-
-        <TextView
             android:text="Enter Steps:"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,14 +83,15 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="112dp"
             android:id="@+id/stepScrollList">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:id="@+id/stepLayout" >
+                android:id="@+id/stepLayout"
+                android:elevation="17dp"
+                android:layout_height="wrap_content">
                 //THE STEPS WILL BE IN A LIST; THERE SHOULD ALWAYS BE A BLANK FEILD TO ENTER A NEW STEP;
                 //IF ALL THE MULTIPLE LINE TEXT FEILDS ARE FULL, CREATE A NEW BLANK ONE.
                 <EditText
@@ -133,6 +120,611 @@
                     android:id="@+id/txtStep3"
                     android:textSize="14sp"
                     android:hint="Enter Step 3" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/txtStep4"
+                    android:textSize="14sp"
+                    android:hint="Enter Step 4" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:text="Choose Ingredients:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblChooseIngr"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:id="@+id/ingredientScrollList">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ingrCheckList">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <CheckBox
+                        android:text="Tomato"
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkIngr1"
+                        android:layout_weight="0.34" />
+                    <TextView
+                        android:text="int:"
+                        android:id="@+id/textInt"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtNumber"
+                        android:hint="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="unit:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView15" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/editText17"
+                        android:hint="number"
+                        android:textSize="14sp"
+                        android:layout_weight="0.26" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <CheckBox
+                        android:text="Avocado"
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkIngr2"
+                        android:layout_weight="0.34" />
+                    <TextView
+                        android:text="int:"
+                        android:id="@+id/textInt2"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtNumber2"
+                        android:hint="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="unit:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView16" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/editText18"
+                        android:hint="number"
+                        android:textSize="14sp"
+                        android:layout_weight="0.34" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <CheckBox
+                        android:text="Onion"
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkIngr3"
+                        android:layout_weight="0.34" />
+                    <TextView
+                        android:text="int:"
+                        android:id="@+id/textInt3"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtNumber3"
+                        android:hint="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="unit:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView17" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/editText6"
+                        android:hint="unit"
+                        android:textSize="14sp"
+                        android:layout_weight="0.26" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <CheckBox
+                        android:text="Salt"
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkIngr4"
+                        android:layout_weight="0.34" />
+                    <TextView
+                        android:text="int:"
+                        android:id="@+id/textInt4"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtNumber4"
+                        android:hint="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="unit:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView18" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/editText7"
+                        android:hint="unit"
+                        android:textSize="14sp"
+                        android:layout_weight="0.26" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <CheckBox
+                        android:text="Flour"
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkIngr5"
+                        android:layout_weight="0.34" />
+                    <TextView
+                        android:text="int:"
+                        android:id="@+id/textInt5"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtNumber5"
+                        android:hint="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="unit:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView19" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/editText8"
+                        android:hint="unit"
+                        android:textSize="14sp"
+                        android:layout_weight="0.26" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <CheckBox
+                        android:text="Sugar"
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkIngr6"
+                        android:layout_weight="0.34" />
+                    <TextView
+                        android:text="int:"
+                        android:id="@+id/textInt6"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtNumber6"
+                        android:hint="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="unit:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView20" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/editText9"
+                        android:hint="unit"
+                        android:textSize="14sp"
+                        android:layout_weight="0.26" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <CheckBox
+                        android:text="Chicken tigh"
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkIngr7"
+                        android:layout_weight="0.34" />
+                    <TextView
+                        android:text="int:"
+                        android:id="@+id/textInt7"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtNumber7"
+                        android:hint="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="unit:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView21" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/editText10"
+                        android:hint="unit"
+                        android:textSize="14sp"
+                        android:layout_weight="0.26" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <CheckBox
+                        android:text="Beef "
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkIngr8"
+                        android:layout_weight="0.34" />
+                    <TextView
+                        android:text="int:"
+                        android:id="@+id/textInt8"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtNumber8"
+                        android:hint="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="unit:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView22" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/editText11"
+                        android:hint="unit"
+                        android:textSize="14sp"
+                        android:layout_weight="0.26" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <CheckBox
+                        android:text="Water "
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkIngr9"
+                        android:layout_weight="0.34" />
+                    <TextView
+                        android:text="int:"
+                        android:id="@+id/textInt9"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtNumber9"
+                        android:hint="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="unit:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView23" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/editText12"
+                        android:hint="unit"
+                        android:textSize="14sp"
+                        android:layout_weight="0.26" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <CheckBox
+                        android:text="Butter"
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkIngr10"
+                        android:layout_weight="0.34" />
+                    <TextView
+                        android:text="int:"
+                        android:id="@+id/textInt10"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtNumber10"
+                        android:hint="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="unit:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView24" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/editText13"
+                        android:hint="unit"
+                        android:textSize="14sp"
+                        android:layout_weight="0.26" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <CheckBox
+                        android:text="Mushroom"
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkIngr11"
+                        android:layout_weight="0.34" />
+                    <TextView
+                        android:text="int:"
+                        android:id="@+id/textInt11"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtNumber11"
+                        android:hint="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="unit:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView25" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/editText14"
+                        android:hint="number"
+                        android:textSize="14sp"
+                        android:layout_weight="0.26" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <CheckBox
+                        android:text="Salmon"
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkIngr12"
+                        android:layout_weight="0.34" />
+                    <TextView
+                        android:text="int:"
+                        android:id="@+id/textInt12"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtNumber12"
+                        android:hint="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="unit:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView26" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/editText15"
+                        android:hint="number"
+                        android:textSize="14sp"
+                        android:layout_weight="0.26" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <CheckBox
+                        android:text="Lemon"
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkIngr13"
+                        android:layout_weight="0.34" />
+                    <TextView
+                        android:text="int:"
+                        android:id="@+id/textInt13"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/txtNumber6"
+                        android:hint="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="unit:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView27" />
+
+                    <EditText
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/editText16"
+                        android:hint="number"
+                        android:textSize="14sp"
+                        android:layout_weight="0.26" />
+                </LinearLayout>
+
             </LinearLayout>
         </ScrollView>
 
@@ -140,6 +732,27 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Select category:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView28"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Select type:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView29"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp">
 
             <Spinner
                 android:layout_width="match_parent"
@@ -174,19 +787,6 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/btnAddRecipe"
                 android:layout_weight="1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Swipe Left to Go Back"
-                android:id="@+id/textView14" />
         </LinearLayout>
 
     </LinearLayout>

@@ -7,16 +7,32 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+
     tools:context="com.uottawa.cookhelper.HomeActivity">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:background="@drawable/picturebackground">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:background="@drawable/ic_launcher"
+                android:id="@+id/chefIcon"></LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -30,23 +46,18 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="COOKHELPER"
                     android:id="@+id/textView4"
-                    android:textSize="50dp" />
+                    android:textSize="50dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:fontFamily="casual"
+                    android:textStyle="normal|bold" />
             </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.7"
-            android:baselineAligned="true"
-
-            android:id="@+id/chefIcon"></LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -60,10 +71,14 @@
                 android:textSize="20dp"
                 android:fontFamily="sans-serif-medium"
 
-                android:id="@+id/btnMyrecipe"
-
+                android:id="@+id/btnMyRecipe"
+                android:background="@drawable/button"
                 android:capitalize="none"
-                android:clickable="false" />
+                android:clickable="true"
+                android:onClick="btnMyrecipe"
+                android:textColor="@android:color/background_light"
+                android:textStyle="normal|bold"
+                android:layout_marginBottom="6dp" />
 
         </LinearLayout>
 
@@ -78,7 +93,11 @@
                 android:text="Add a recipe"
                 android:textSize="20dp"
                 android:fontFamily="sans-serif-medium"
-                android:id="@+id/btnAddrecipe" />
+                android:id="@+id/btnAddRecipe"
+                android:textColor="@android:color/background_light"
+                android:textStyle="normal|bold"
+                android:background="@drawable/button"
+                android:layout_marginBottom="6dp" />
 
         </LinearLayout>
 
@@ -93,7 +112,24 @@
                 android:text="Find a recipe"
                 android:textSize="20dp"
                 android:fontFamily="sans-serif-medium"
-                android:id="@+id/btnFindRecipe" />
+                android:id="@+id/btnFindRecipe"
+                android:background="@drawable/button"
+                android:textColor="@android:color/background_light"
+                android:textStyle="normal|bold"
+                android:layout_marginBottom="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnHelp"
+                android:layout_weight="1" />
         </LinearLayout>
 
     </LinearLayout>

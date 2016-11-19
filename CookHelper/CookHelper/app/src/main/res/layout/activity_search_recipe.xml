@@ -26,16 +26,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
-                android:layout_width="51dp"
-                android:layout_height="wrap_content"
-                android:text="Button"
-                android:layout_alignParentRight="true"
-                android:layout_marginLeft="0dp"
-                android:layout_marginRight="0dp"
-                android:gravity="center"
-                android:id="@+id/btnHelp"
-                android:background="#b89c2d" />
         </LinearLayout>
 
         <LinearLayout
@@ -48,8 +38,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Find a recipe"
-                android:textSize="38dp"
-                android:textStyle="bold"
+                android:textSize="24sp"
                 android:id="@+id/textView3" />
         </LinearLayout>
 
@@ -66,42 +55,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/searchView"
-                android:background="@android:drawable/button_onoff_indicator_off" />
+                android:background="@color/black_overlay" />
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_marginBottom="10dp"
             android:layout_gravity="bottom">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="131dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Select category:"
                 android:textStyle="bold"
                 android:id="@+id/textView"
-                android:textSize="20dp" />
+                android:textSize="18sp" />
 
             <Spinner
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinner"
-                android:background="@android:drawable/spinner_dropdown_background"
-                android:spinnerMode="dropdown"
-                android:focusableInTouchMode="false" />
-            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1"
-                android:onClick="showDropDown"
-                android:src="@android:drawable/btn_dropdown"
-                android:id="@+id/dropDownArrow1"
-                android:longClickable="true"
-                android:focusable="false" />
+                android:id="@+id/spinner"
+                android:spinnerMode="dropdown"
+                android:focusableInTouchMode="false" />
         </LinearLayout>
 
         <LinearLayout
@@ -112,28 +90,19 @@
             >
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="131dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Select type:"
                 android:textStyle="bold"
                 android:id="@+id/textView2"
-                android:textSize="20dp" />
+                android:textSize="18sp" />
 
             <Spinner
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinner2"
-                android:background="@android:drawable/spinner_dropdown_background"
-                android:spinnerMode="dropdown" />
-
-            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:onClick="showDropDown"
-                android:src="@android:drawable/btn_dropdown"
-                android:id="@+id/dropDownArrow2" />
+                android:id="@+id/spinner2"
+                android:spinnerMode="dropdown" />
 
         </LinearLayout>
 
@@ -144,7 +113,8 @@
             android:layout_weight="0.93"
             android:baselineAligned="false"
             android:clickable="false"
-            android:background="@android:drawable/spinner_background">
+            android:background="@android:drawable/spinner_background"
+            android:layout_marginBottom="6dp">
 
             <ScrollView
                 android:layout_width="fill_parent"
@@ -161,7 +131,9 @@
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:text="Cancel"
-                android:id="@+id/btnCancel" />
+                android:id="@+id/btnCancel"
+                android:background="@drawable/button"
+                android:layout_marginRight="6dp" />
 
             <Button
                 android:layout_width="110dp"
@@ -169,14 +141,16 @@
                 android:gravity="center"
                 android:text="See recipe"
                 android:id="@+id/btnSeeRecipe"
-                android:background="#b89c2d" />
+                android:background="@drawable/button"
+                android:layout_marginRight="6dp" />
 
             <Button
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:text="Reset"
                 android:id="@+id/btnReset"
-                android:gravity="center" />
+                android:gravity="center"
+                android:background="@drawable/button" />
 
         </LinearLayout>
 
