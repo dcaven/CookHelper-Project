@@ -29,7 +29,7 @@ public class AddaRecipeActivity extends AppCompatActivity {
         This ActionListner for the recipeLabel simply hides the keyboard when the user
         triggers an action event by pressing the "ENTER" or "RETURN" after
         Entering their Recipe title
-        IMPLEMENTED : NOV 29th : 12:57 AM 
+        IMPLEMENTED : NOV 29th : 12:57 AM t
      */
     TextView.OnEditorActionListener recipelabelListener = new TextView.OnEditorActionListener(){
         public boolean onEditorAction(TextView recipeLabel, int actionId, KeyEvent event) {
