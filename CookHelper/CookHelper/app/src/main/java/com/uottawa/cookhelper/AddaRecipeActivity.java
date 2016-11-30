@@ -12,6 +12,8 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager ;
 import android.content.Context ;
 
+import static com.uottawa.cookhelper.R.id.btnMyRecipe;
+
 
 public class AddaRecipeActivity extends AppCompatActivity {
 
@@ -20,9 +22,9 @@ public class AddaRecipeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adda_recipe);
 
-        Button btnAdd = (Button) findViewById(R.id.btnMyRecipe);
+        Button btnAdd = (Button) findViewById(btnMyRecipe); //why?
         TextView recipeLabel = (TextView) findViewById(R.id.txtAddRecipe); //Finds the recipeLabel i.e. the top TextEdit
-        recipeLabel.setOnEditorActionListener(recipelabelListener);// Creates and action listner for the top label
+        recipeLabel.setOnEditorActionListener(recipelabelListener);  // Creates and action listner for the top label
     }
 
     /*
