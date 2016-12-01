@@ -21,8 +21,17 @@ public class AddaRecipeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_adda_recipe);
 
         Button btnAdd = (Button) findViewById(R.id.btnMyRecipe);
-        TextView recipeLabel = (TextView) findViewById(R.id.txtAddRecipe); //Finds the recipeLabel i.e. the top TextEdit
-        recipeLabel.setOnEditorActionListener(recipelabelListener);// Creates and action listner for the top label
+        TextView recipeLabel, step1, step2, step3 ;
+         recipeLabel = (TextView) findViewById(R.id.txtAddRecipe); //Finds the recipeLabel i.e. the top TextEdit
+        step1 = (TextView) findViewById(R.id.txtStep1); //Finds the step1 i.e. the top TextEdit
+        step2 = (TextView) findViewById(R.id.txtStep2); //Finds the step2 i.e. the top TextEdit
+        step3 = (TextView) findViewById(R.id.txtStep3); //Finds the step3 i.e. the top TextEdit
+
+        recipeLabel.setOnEditorActionListener(textEditListener);// Creates and action listner for the top label
+        step1.setOnEditorActionListener(textEditListener);// Creates and action listner for the top label
+        step2.setOnEditorActionListener(textEditListener);// Creates and action listner for the top label
+        step3.setOnEditorActionListener(textEditListener);// Creates and action listner for the top label
+
     }
 
     /*
@@ -31,7 +40,7 @@ public class AddaRecipeActivity extends AppCompatActivity {
         Entering their Recipe title
         IMPLEMENTED : NOV 29th : 12:57 AM t
      */
-    TextView.OnEditorActionListener recipelabelListener = new TextView.OnEditorActionListener(){
+    TextView.OnEditorActionListener textEditListener = new TextView.OnEditorActionListener(){
         public boolean onEditorAction(TextView recipeLabel, int actionId, KeyEvent event) {
             if (actionId == EditorInfo.IME_NULL
                     && event.getAction() == KeyEvent.ACTION_DOWN) {
