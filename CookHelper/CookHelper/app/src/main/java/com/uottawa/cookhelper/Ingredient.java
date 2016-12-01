@@ -7,14 +7,15 @@ package com.uottawa.cookhelper;
 public class Ingredient {
     private String name ;
     private float quantity ;
-    private enum Units{
+    public enum Units{
         grams, ounce, cup, teaSpoon, tableSpoon ;
     }
     Units unit ;
 
-    Ingredient(String name, float quantity, Units unit){
+    Ingredient(String name, float quantity, String unit){
         this.name = name ;
         this.quantity = quantity ;
-        this.unit = unit ;
+        this.unit = Units.valueOf(unit) ;
     }
+
 }

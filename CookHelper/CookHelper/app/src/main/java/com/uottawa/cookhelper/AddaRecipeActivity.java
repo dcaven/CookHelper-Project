@@ -22,7 +22,7 @@ public class AddaRecipeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adda_recipe);
 
-        Button btnAdd = (Button) findViewById(btnMyRecipe); //why?
+        Button btnAdd = (Button) findViewById(btnMyRecipe);
         TextView recipeLabel = (TextView) findViewById(R.id.txtAddRecipe); //Finds the recipeLabel i.e. the top TextEdit
         recipeLabel.setOnEditorActionListener(recipelabelListener);  // Creates and action listner for the top label
     }

@@ -21,16 +21,18 @@ public class Recipe {
     private LinkedList<String> stepsList ;
 
     //Constructor
-    Recipe(String name, _Class type, String origin, Category cat, LinkedList<Ingredient> list, LinkedList<String> steps){
-
+    Recipe(String name, String type, String origin, String cat, LinkedList<Ingredient> list, LinkedList<String> steps){
         this.name = name ;
-        this.type = type ;
+        this.type = _Class.valueOf(type) ;
         this.origin = origin ;
-        this.cat = cat ;
+        this.cat = Category.valueOf(cat) ;
         this.ingredientsList = list ;
         this.stepsList = steps ;
     }
 
+    public String getName(){
+        return name ;
+    }
     public void addIngredient(Ingredient toAdd){
         ingredientsList.add(toAdd) ;
     }
