@@ -21,11 +21,19 @@ public class AddaRecipeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_adda_recipe);
 
         Button btnAdd = (Button) findViewById(R.id.btnMyRecipe);
-        TextView recipeLabel, step1, step2, step3 ;
+        TextView recipeLabel, step1, step2, step3, step4,step5,step6,step7,step8,step9,step10;
          recipeLabel = (TextView) findViewById(R.id.txtAddRecipe); //Finds the recipeLabel i.e. the top TextEdit
         step1 = (TextView) findViewById(R.id.txtStep1); //Finds the step1 i.e. the top TextEdit
         step2 = (TextView) findViewById(R.id.txtStep2); //Finds the step2 i.e. the top TextEdit
         step3 = (TextView) findViewById(R.id.txtStep3); //Finds the step3 i.e. the top TextEdit
+        step4 = (TextView) findViewById(R.id.txtStep4); //Finds the step4 i.e. the top TextEdit
+        step5 = (TextView) findViewById(R.id.txtStep5); //Finds the step5 i.e. the top TextEdit
+        step6 = (TextView) findViewById(R.id.txtStep6); //Finds the step6 i.e. the top TextEdit
+        step7 = (TextView) findViewById(R.id.txtStep7); //Finds the step7 i.e. the top TextEdit
+        step8 = (TextView) findViewById(R.id.txtStep8); //Finds the step8 i.e. the top TextEdit
+        step9 = (TextView) findViewById(R.id.txtStep9); //Finds the step9 i.e. the top TextEdit
+        step10 = (TextView) findViewById(R.id.txtStep10); //Finds the step10 i.e. the top TextEdit
+
 
         recipeLabel.setOnEditorActionListener(textEditListener);// Creates and action listner for the top label
         step1.setOnEditorActionListener(textEditListener);// Creates and action listner for the top label
