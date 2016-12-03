@@ -130,6 +130,55 @@
                     android:textSize="14sp"
                     android:hint="Enter Step 4" />
 
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/txtStep5"
+                    android:textSize="14sp"
+                    android:hint="Enter Step 5" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/txtStep6"
+                    android:textSize="14sp"
+                    android:hint="Enter Step 6" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/txtStep7"
+                    android:textSize="14sp"
+                    android:hint="Enter Step 7" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/txtStep8"
+                    android:textSize="14sp"
+                    android:hint="Enter Step 8" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/txtStep9"
+                    android:textSize="14sp"
+                    android:hint="Enter Step 9" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/txtStep10"
+                    android:textSize="14sp"
+                    android:hint="Enter Step 10" />
+
             </LinearLayout>
         </ScrollView>
 
