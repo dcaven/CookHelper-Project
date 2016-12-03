@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">CookHelper</string>
     <string name="title_activity_addrecipeactivity">Addrecipeactivity</string>
+    <string-array name="class_choices">
+        <item>Chicken</item>
+        <item>Beef</item>
+        <item>Seafood</item>
+        <item>Veggie</item>
+    </string-array>
 </resources>

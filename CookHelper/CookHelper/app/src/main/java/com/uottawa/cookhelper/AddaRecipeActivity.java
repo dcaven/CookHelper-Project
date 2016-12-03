@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnKeyListener ;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.EditText;
 import android.view.inputmethod.EditorInfo;
@@ -21,6 +23,7 @@ public class AddaRecipeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_adda_recipe);
 
         Button btnAdd = (Button) findViewById(R.id.btnMyRecipe);
+
         TextView recipeLabel, step1, step2, step3, step4,step5,step6,step7,step8,step9,step10;
          recipeLabel = (TextView) findViewById(R.id.txtAddRecipe); //Finds the recipeLabel i.e. the top TextEdit
         step1 = (TextView) findViewById(R.id.txtStep1); //Finds the step1 i.e. the top TextEdit
@@ -36,9 +39,24 @@ public class AddaRecipeActivity extends AppCompatActivity {
 
 
         recipeLabel.setOnEditorActionListener(textEditListener);// Creates and action listner for the top label
-        step1.setOnEditorActionListener(textEditListener);// Creates and action listner for the top label
-        step2.setOnEditorActionListener(textEditListener);// Creates and action listner for the top label
-        step3.setOnEditorActionListener(textEditListener);// Creates and action listner for the top label
+        step3.setOnEditorActionListener(textEditListener);// Creates and action listner for the step label
+        step1.setOnEditorActionListener(textEditListener);// Creates and action listner for the step label
+        step2.setOnEditorActionListener(textEditListener);// Creates and action listner for the step label
+        step4.setOnEditorActionListener(textEditListener);// Creates and action listner for the step label
+        step5.setOnEditorActionListener(textEditListener);// Creates and action listner for the step label
+        step6.setOnEditorActionListener(textEditListener);// Creates and action listner for the step label
+        step7.setOnEditorActionListener(textEditListener);// Creates and action listner for the step label
+        step8.setOnEditorActionListener(textEditListener);// Creates and action listner for the step label
+        step9.setOnEditorActionListener(textEditListener);// Creates and action listner for the step label
+        step10.setOnEditorActionListener(textEditListener);// Creates and action listner for the step label
+
+        Spinner meatChoicespinner = (Spinner) findViewById(R.id.MeatChoice) ;
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.class_choices, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        meatChoicespinner.setAdapter(adapter);
+
 
     }
 
@@ -48,6 +66,7 @@ public class AddaRecipeActivity extends AppCompatActivity {
         Entering their Recipe title
         IMPLEMENTED : NOV 29th : 12:57 AM t
      */
+
     TextView.OnEditorActionListener textEditListener = new TextView.OnEditorActionListener(){
         public boolean onEditorAction(TextView recipeLabel, int actionId, KeyEvent event) {
             if (actionId == EditorInfo.IME_NULL

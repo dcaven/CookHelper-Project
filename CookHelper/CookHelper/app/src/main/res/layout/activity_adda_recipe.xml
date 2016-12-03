@@ -50,30 +50,6 @@
                 android:textSize="18sp" />
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="144dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="180dp">
-
-           //this button will allow user to edit list of ingerdients (delete certain ones)
-            <Button
-
-                android:text="Edit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnEdit"
-                android:layout_weight="1" />
-            //allows user to add an ingredient to the list
-            <Button
-                android:text="+"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnAdd"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
         <TextView
             android:text="Enter Steps:"
             android:layout_width="match_parent"
@@ -188,6 +164,12 @@
             android:layout_height="wrap_content"
             android:id="@+id/lblChooseIngr"
             android:textSize="18sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MeatChoice"
+            android:layout_weight="0.34" />
 
         <ScrollView
             android:layout_width="match_parent"
