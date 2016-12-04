@@ -168,8 +168,7 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/MeatChoice"
-            android:layout_weight="0.34" />
+            android:id="@+id/ClassChoice" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -216,15 +215,12 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView15" />
 
-                    <EditText
-                        android:layout_width="77dp"
+                    <Spinner
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText17"
-                        android:hint="number"
-                        android:textSize="14sp"
-                        android:layout_weight="0.26" />
+                        android:id="@+id/spinIngre1"
+                        android:layout_weight="0.34" />
+
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -260,14 +256,10 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView16" />
 
-                    <EditText
-                        android:layout_width="77dp"
+                    <Spinner
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText18"
-                        android:hint="number"
-                        android:textSize="14sp"
+                        android:id="@+id/spinIngre2"
                         android:layout_weight="0.34" />
 
                 </LinearLayout>
@@ -305,15 +297,12 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView17" />
 
-                    <EditText
-                        android:layout_width="77dp"
+                    <Spinner
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText6"
-                        android:hint="unit"
-                        android:textSize="14sp"
-                        android:layout_weight="0.26" />
+                        android:id="@+id/spinIngre3"
+                        android:layout_weight="0.34" />
+
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -349,16 +338,14 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView18" />
 
-                    <EditText
-                        android:layout_width="77dp"
+                    <Spinner
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText7"
-                        android:hint="unit"
-                        android:textSize="14sp"
-                        android:layout_weight="0.26" />
+                        android:id="@+id/spinIngre4"
+                        android:layout_weight="0.34" />
+
                 </LinearLayout>
+
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -393,15 +380,12 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView19" />
 
-                    <EditText
-                        android:layout_width="77dp"
+                    <Spinner
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText8"
-                        android:hint="unit"
-                        android:textSize="14sp"
-                        android:layout_weight="0.26" />
+                        android:id="@+id/spinIngre5"
+                        android:layout_weight="0.34" />
+
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -437,15 +421,12 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView20" />
 
-                    <EditText
-                        android:layout_width="77dp"
+                    <Spinner
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText9"
-                        android:hint="unit"
-                        android:textSize="14sp"
-                        android:layout_weight="0.26" />
+                        android:id="@+id/spinIngre6"
+                        android:layout_weight="0.34" />
+
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -481,15 +462,12 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView21" />
 
-                    <EditText
-                        android:layout_width="77dp"
+                    <Spinner
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText10"
-                        android:hint="unit"
-                        android:textSize="14sp"
-                        android:layout_weight="0.26" />
+                        android:id="@+id/spinIngre7"
+                        android:layout_weight="0.34" />
+
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -525,15 +503,12 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView22" />
 
-                    <EditText
-                        android:layout_width="77dp"
+                    <Spinner
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText11"
-                        android:hint="unit"
-                        android:textSize="14sp"
-                        android:layout_weight="0.26" />
+                        android:id="@+id/spinIngre8"
+                        android:layout_weight="0.34" />
+
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -569,15 +544,12 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView23" />
 
-                    <EditText
-                        android:layout_width="77dp"
+                    <Spinner
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText12"
-                        android:hint="unit"
-                        android:textSize="14sp"
-                        android:layout_weight="0.26" />
+                        android:id="@+id/spinIngre9"
+                        android:layout_weight="0.34" />
+
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -613,15 +585,12 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView24" />
 
-                    <EditText
-                        android:layout_width="77dp"
+                    <Spinner
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText13"
-                        android:hint="unit"
-                        android:textSize="14sp"
-                        android:layout_weight="0.26" />
+                        android:id="@+id/spinIngre10"
+                        android:layout_weight="0.34" />
+
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -657,16 +626,14 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView25" />
 
-                    <EditText
-                        android:layout_width="77dp"
+                    <Spinner
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText14"
-                        android:hint="number"
-                        android:textSize="14sp"
-                        android:layout_weight="0.26" />
+                        android:id="@+id/spinIngre11"
+                        android:layout_weight="0.34" />
+
                 </LinearLayout>
+
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -701,15 +668,12 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView26" />
 
-                    <EditText
-                        android:layout_width="77dp"
+                    <Spinner
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText15"
-                        android:hint="number"
-                        android:textSize="14sp"
-                        android:layout_weight="0.26" />
+                        android:id="@+id/spinIngre12"
+                        android:layout_weight="0.34" />
+
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -735,7 +699,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textMultiLine"
                         android:ems="10"
-                        android:id="@+id/txtNumber6"
+                        android:id="@+id/txtNumber13"
                         android:hint="number"
                         android:textSize="14sp" />
 
@@ -745,15 +709,12 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView27" />
 
-                    <EditText
-                        android:layout_width="77dp"
+                    <Spinner
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText16"
-                        android:hint="number"
-                        android:textSize="14sp"
-                        android:layout_weight="0.26" />
+                        android:id="@+id/spinIngre13"
+                        android:layout_weight="0.34" />
+
                 </LinearLayout>
 
             </LinearLayout>

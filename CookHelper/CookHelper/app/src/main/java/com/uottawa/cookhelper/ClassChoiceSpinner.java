@@ -10,12 +10,9 @@ import android.widget.Spinner;
  * Created by joseph-lef on 2016-12-03.
  */
 
-public class MeatChoiceSpinner extends Activity implements AdapterView.OnItemSelectedListener {
+public class ClassChoiceSpinner extends Activity implements AdapterView.OnItemSelectedListener {
 
-    Spinner meatChoicespinner = (Spinner) findViewById(R.id.MeatChoice) ;
 
-    ArrayAdapter<CharSequence> adap = ArrayAdapter.createFromResource(this,
-            R.array.class_choices, android.R.layout.simple_spinner_item);
 
     // result from spinner choice ;
     static String result ;
