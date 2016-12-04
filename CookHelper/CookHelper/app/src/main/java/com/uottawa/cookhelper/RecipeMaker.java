@@ -1,7 +1,11 @@
 package com.uottawa.cookhelper;
 
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutCompat;
+import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.LinkedList;
@@ -38,11 +42,32 @@ public class RecipeMaker extends AppCompatActivity {
         EditText step9 = (EditText) findViewById(R.id.txtStep9); //Finds the step9 i.e. the top TextEdit
         EditText step10 = (EditText) findViewById(R.id.txtStep10); //Finds the step10 i.e. the top TextEdit
 
-        String s ;
-        for(int i = 1 ; i <= 10 ; i++) {
-            s = "step"+i  ;
-           // steps.add()
+
+        LinearLayout lay = (LinearLayout)findViewById(R.id.ingrCheckList) ;
+
+
+        for(int i = 0; i < lay.getChildCount() ; i++){
+            LinearLayout v = (LinearLayout) lay.getChildAt(i) ; //Crazy cast
+            for(int j = 0 ; j < v.getChildCount() ; j++){
+                View u = v.getChildAt(i) ;
+                if(u instanceof CheckBox){
+                    if(((CheckBox) u).isChecked()){
+                        String f = ((CheckBox) u).getText().toString() ;
+                    }else{
+                        break ;
+                    }
+
+                }
+                if(u instanceof EditText){
+
+                }
+               // if(u instanceof )
+
+            }
+
         }
+
+
 
     }
 
