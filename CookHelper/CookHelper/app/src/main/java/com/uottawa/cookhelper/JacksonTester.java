@@ -26,7 +26,7 @@ public class JacksonTester {
         String name = "onions";
         String unit = "grams";
         Ingredient ing = new Ingredient(name, quantity, unit);
-        Ingredient ing1 = new Ingredient("mango", 30, "teaSpoon");
+        Ingredient ing1 = new Ingredient("mango", 30, "tsp");
 
 
         LinkedList<Ingredient> ingredientsList = new LinkedList<>();
@@ -39,8 +39,8 @@ public class JacksonTester {
 
         //Recipe(String name, String type, String origin, String cat, LinkedList<Ingredient> list, LinkedList<String> steps
 
-        Recipe pie = new Recipe("Pie", "Chicken", "China", "appetizer", ingredientsList, stepsList);
-        Recipe swag = new Recipe("Swag", "Beef", "Nigeria", "mainDish", ingredientsList, stepsList);
+        Recipe pie = new Recipe("wtf", "Chicken", "China", "appetizer", ingredientsList, stepsList);
+        Recipe swag = new Recipe("champ", "Beef", "Nigeria", "mainDish", ingredientsList, stepsList);
 
         try {
             writeJSON(pie, pie.getName());
@@ -49,8 +49,8 @@ public class JacksonTester {
         catch (JsonParseException e) { e.printStackTrace(); }
         catch (JsonMappingException e) { e.printStackTrace(); }
         catch (IOException e) { e.printStackTrace(); }
-
     }
+
     public static void writeJSON(Recipe rep, String name) throws JsonGenerationException, JsonMappingException, IOException{
         ObjectMapper mapper = new ObjectMapper();
         mapper.setVisibility(JsonMethod.FIELD, JsonAutoDetect.Visibility.ANY);

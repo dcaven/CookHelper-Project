@@ -1,5 +1,9 @@
 package com.uottawa.cookhelper;
 
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+
+import java.io.IOException;
 import java.util.LinkedList;
 
 /**
@@ -14,7 +18,7 @@ public class Recipe {
     _Class type ;
     private String origin ;  //I made it String because there are approximately 195 countries in the world
     private enum Category {
-        mainDish, starter, dessert, appetizer, drink, sauce ;
+        mainDish, Starter, Dessert, appetizer, Drink, Sauce ;
     }
     Category cat ;
     private LinkedList<Ingredient> ingredientsList ;
