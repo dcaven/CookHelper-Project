@@ -25,7 +25,7 @@ public class AddaRecipeActivity extends AppCompatActivity {
         Button btnAdd = (Button) findViewById(R.id.btnMyRecipe);
 
         EditText recipeLabel, step1, step2, step3, step4,step5,step6,step7,step8,step9,step10;
-         recipeLabel = (EditText) findViewById(R.id.txtAddRecipe); //Finds the recipeLabel i.e. the top TextEdit
+        recipeLabel = (EditText) findViewById(R.id.txtAddRecipe); //Finds the recipeLabel i.e. the top TextEdit
         step1 = (EditText) findViewById(R.id.txtStep1); //Finds the step1 i.e. the top TextEdit
         step2 = (EditText) findViewById(R.id.txtStep2); //Finds the step2 i.e. the top TextEdit
         step3 = (EditText) findViewById(R.id.txtStep3); //Finds the step3 i.e. the top TextEdit

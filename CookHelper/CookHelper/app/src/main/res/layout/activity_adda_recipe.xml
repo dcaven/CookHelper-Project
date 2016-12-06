@@ -428,6 +428,7 @@
                         android:layout_weight="0.34" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -435,7 +436,7 @@
                     android:weightSum="1">
 
                     <CheckBox
-                        android:text="Chicken tigh"
+                        android:text="Chicken thigh"
                         android:layout_width="116dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/chkIngr7"
@@ -448,7 +449,7 @@
                         android:layout_height="wrap_content" />
 
                     <EditText
-                        android:layout_width="77dp"
+                        android:layout_width="74dp"
                         android:layout_height="wrap_content"
                         android:inputType="textMultiLine"
                         android:ems="10"
@@ -460,15 +461,16 @@
                         android:text="unit:"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView21" />
+                        android:id="@+id/textView21"
+                        android:layout_weight="0.36" />
 
                     <Spinner
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/spinIngre7"
-                        android:layout_weight="0.34" />
+                        android:id="@+id/spinIngre7" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -504,7 +506,7 @@
                         android:id="@+id/textView22" />
 
                     <Spinner
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/spinIngre8"
                         android:layout_weight="0.34" />
@@ -627,7 +629,7 @@
                         android:id="@+id/textView25" />
 
                     <Spinner
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/spinIngre11"
                         android:layout_weight="0.34" />
